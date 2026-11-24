@@ -247,3 +247,10 @@ p {
             text-align: center !important;
             vertical-align: middle !important;
         }
+.foto {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 5px;
+        }
