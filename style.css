@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #2c2520;
+    --deep-green: #3a2b39;
+    --bright-lime: #efc384;
+    --bright-teal: #93b7a5;
+    --warm-coral: #c96f52;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f5ede1;
+    color: var(--ink);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    background: linear-gradient(110deg, #2c2030, #4d3a4b);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 5px 18px rgba(44, 32, 48, 0.22);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: normal;
+    display: block;
+    padding: 7px 13px;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 40px 30px 60px;
+    flex: 1;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--ink);
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.9);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 35px 0 18px;
+    padding-left: 12px;
+    border-left: 5px solid var(--bright-lime);
+    color: var(--deep-green);
+}
+
+.sobre-mi-page h2 {
+    padding-left: 0;
+    border-left: 0;
+}
+
+p {
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 20px 0 30px;
+}
+
+.galeria img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #fff;
+    box-shadow: 0 7px 0 rgba(58, 43, 57, 0.12), 0 12px 24px rgba(58, 43, 57, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.galeria img:hover {
+    transform: translateY(-6px) rotate(-1deg);
+    border-color: var(--bright-teal);
+    box-shadow: 0 8px 0 rgba(58, 43, 57, 0.12), 0 16px 30px rgba(58, 43, 57, 0.27);
+}
+
+.galeria.home img {
+    width: 180px;
+    height: 180px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: rgba(255, 250, 241, 0.78);
+    border-radius: 14px;
+    padding: 25px 28px;
+    max-width: 380px;
+    box-shadow: 0 7px 0 rgba(58, 43, 57, 0.1), 0 12px 25px rgba(58, 43, 57, 0.14);
+    font-size: 1rem;
+    line-height: 1.55;
+    border: 3px solid #fffaf1;
+}
+
+.contact-panel {
+    width: 520px;
+    max-width: 100%;
+    padding: 10px 11px 26px;
+}
+
+.contact-panel h1 {
+    margin-bottom: 22px;
+}
+
+/* Estilos del horario de estudis.html */
+.horari-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.horari {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 760px;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.horari th,
+.horari td {
+    border: 1.5px solid #777;
+    padding: 6px 8px;
+    vertical-align: top;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+.horari th {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+}
+
+.hora {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    width: 90px;
+}
+
+.angles {
+    background-color: #5EB5B5;
+    color: #000;
+}
+
+.modul-optatiu {
+    background-color: #9B4DCA;
+    color: #fff;
+}
+
+.muntatge {
+    background-color: #F8C9B0;
+    color: #000;
+}
+
+.xarxes {
+    background-color: #A0522D;
+    color: #fff;
+}
+
+.ofimatica {
+    background-color: #A8D08D;
+    color: #000;
+}
+
+.tutoria {
+    background-color: #C45C9E;
+    color: #fff;
+}
+
+.itinerari {
+    background-color: #7CFC00;
+    color: #000;
+}
+
+.digitalitzacio {
+    background-color: #C5E0B4;
+    color: #000;
+}
+
+.sostenibilitat {
+    background-color: #B4A7D6;
+    color: #000;
+}
+
+.sistemes {
+    background-color: #FF69B4;
+    color: #000;
+}
+
+.pati {
+    background-color: #F7D774;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
